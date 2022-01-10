@@ -1,0 +1,23 @@
+ALGORITHM solution1_hach
+VAR
+    hash_tab: HASH_TABLE<INTEGER,INTEGER>
+    tab1 : ARRAY_OF INTEGER[4];
+    tab2 : ARRAY_OF INTEGER[4];
+    sum, i, j : INTEGER;
+
+BEGIN
+    tab1 := {12, 13, 6, 10};
+    tab2 := {13, 10, 16, 15};
+    sum := 0;
+    FOR i FROM 0 TO ta1.length-1 STEP 1  DO
+        hash_tab.insert(ta1[i], i);
+    END_FOR
+
+    FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+        IF (hash_tab.get(j) == tab2[j]) THEN
+            sum := sum + hash_tab.get(j) + tab2[j];
+        END_IF
+    END_FOR
+
+    Write("Somme "+sum);
+END
